@@ -8,7 +8,7 @@ export function activate(context: vscode.ExtensionContext) {
 	
 	// Console diagnostic information (console.log) and errors (console.error)
 	// Will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "vscode-extension-sidebar-html" is active!');
+	console.log('Congratulations, your extension "Poetry Manager" is active!');
 
 	const provider = new CustomSidebarViewProvider(context.extensionUri);
 
@@ -21,8 +21,11 @@ export function activate(context: vscode.ExtensionContext) {
 
 	  context.subscriptions.push(
 		vscode.commands.registerCommand("vscodeSidebar.menu.view", () => {
-		  const message = "Menu/Title of extension is clicked !";
-		  vscode.window.showInformationMessage(message);
+		  const message = "A new poetry project was found! Install project?";
+		  const options =  ['yes', 'no'];
+		  vscode.window.showInformationMessage(message, ...options).then(selection => {
+			console.log(selection);
+		  });;
 		})
 	  );
 

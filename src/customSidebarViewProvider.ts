@@ -41,6 +41,9 @@ export class CustomSidebarViewProvider implements vscode.WebviewViewProvider {
       vscode.Uri.joinPath(this._extensionUri, "assets", "main.css")
     );
 
+    const message = "A new poetry project was found! Install project?";
+		const options =  ['yes', 'no'];
+
     // Use a nonce to only allow a specific script to be run.
     const nonce = getNonce();
 
@@ -67,6 +70,10 @@ export class CustomSidebarViewProvider implements vscode.WebviewViewProvider {
         </h1>
         <button> Click me </button>
       </body>
+
+      <script>
+
+      </script>
 
 			</html>`;
   }
