@@ -25,6 +25,23 @@ export function activate(context: vscode.ExtensionContext) {
 		  const options =  ['yes', 'no'];
 		  vscode.window.showInformationMessage(message, ...options).then(selection => {
 			console.log(selection);
+			if (selection === 'yes') {
+				console.log('Entering in my if condition');
+				const cp = require('child_process');
+				cp.exec('where poetry', (err: string, stdout: string, stderr: string) => {
+					
+					console.log('stdout: ' + stdout);
+    				console.log('stderr: ' + stderr);
+					if (err) {
+						console.log('error: ' + err);
+					}
+				});
+				
+				
+			} else {
+				console.log('Entering in my else condition');
+			}
+			
 		  });;
 		})
 	  );
