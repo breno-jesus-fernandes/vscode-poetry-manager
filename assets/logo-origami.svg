@@ -4,10 +4,9 @@
             .cls-1 {
                 isolation: isolate;
                 stroke: #ffffff;
-                stroke-width: 30px;
+                stroke-width: 25px;
                 stroke-linecap: butt;
                 stroke-linejoin: miter;
-                shape-rendering="crispEdges";
             }
 
             .cls-2 {
@@ -18,28 +17,6 @@
                 fill: url(#radial-gradient-2);
             }
 
-            .cls-4,
-            .cls-5,
-            .cls-6 {
-                
-            }
-
-            .cls-4 {
-                fill: url(#linear-gradient);
-            }
-
-            .cls-5 {
-                fill: url(#linear-gradient-2);
-            }
-
-            .cls-6 {
-                fill: url(#linear-gradient-3);
-            }
-
-            .cls-7 {
-                mix-blend-mode: screen;
-                fill: url(#radial-gradient-3);
-            }
         </style>
         <radialGradient id="radial-gradient" cx="438.3" cy="639.01" r="569.94" gradientTransform="translate(0 0)"
             gradientUnits="userSpaceOnUse">
@@ -53,31 +30,7 @@
             <stop offset="0.38" stop-color="rgba(204,204,204,0)" />
             <stop offset="1" stop-color="rgba(204,204,204,0)" />
         </radialGradient>
-        <linearGradient id="linear-gradient" x1="74.77" y1="67.3" x2="277.23" y2="512.72"
-            gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="rgba(204,204,204,0)" />
-            <stop offset="0.48" stop-color="rgba(204,204,204,0)" />
-            <stop offset="0.84" stop-color="rgba(204,204,204,0)" />
-            <stop offset="1" stop-color="rgba(204,204,204,0)" />
-        </linearGradient>
-        <linearGradient id="linear-gradient-2" x1="-228.74" y1="-144.29" x2="451" y2="651.89"
-            gradientTransform="translate(0 0)" gradientUnits="userSpaceOnUse">
-            <stop offset="0"  stop-color="rgba(204,204,204,0)" />
-            <stop offset="0.29" stop-color="rgba(204,204,204,0)" />
-            <stop offset="0.77" stop-color="rgba(204,204,204,0)" />
-            <stop offset="1" stop-color="rgba(204,204,204,0)" />
-        </linearGradient>
-        <linearGradient id="linear-gradient-3" x1="-151.22" y1="-285.9" x2="450.08" y2="430.63"
-            gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="rgba(204,204,204,0)" />
-            <stop offset="0.15" stop-color="rgba(204,204,204,0)" />
-            <stop offset="0.73" stop-color="rgba(204,204,204,0)" />
-            <stop offset="1" stop-color="rgba(204,204,204,0)" />
-        </linearGradient>
-        <radialGradient id="radial-gradient-3" cx="259.68" cy="-34.71" r="431.37" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="rgba(204,204,204,0)" />
-            <stop offset="1" />
-        </radialGradient>
+
     </defs>
     <title>logo-origami</title>
     <g class="cls-1">
