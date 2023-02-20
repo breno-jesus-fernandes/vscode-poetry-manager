@@ -16,7 +16,6 @@
             .cls-3 {
                 fill: url(#radial-gradient-2);
             }
-
         </style>
         <radialGradient id="radial-gradient" cx="438.3" cy="639.01" r="569.94" gradientTransform="translate(0 0)"
             gradientUnits="userSpaceOnUse">
